@@ -23,7 +23,7 @@ class Message extends React.Component {
                 <button onClick={this.handleMessageButton}>{this.state.messageIsActive ? 'Ukryj' : 'Pokaż'}</button>
                 {/*<p>{this.state.messageIsActive && text}</p>*/}
                 {/*{this.state.messageIsActive ? <p>{text}</p> : null}*/}
-                {/*{this.state.messageIsActive && <p>{text}</p>}*/}
+                {this.state.messageIsActive && <p>{text}</p>}
             </React.Fragment>
         );
     }
